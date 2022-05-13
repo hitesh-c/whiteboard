@@ -1,0 +1,116 @@
+  
+
+
+.tool-section {
+    padding-bottom: 0.5rem;
+  }
+  
+  .tool-section--lrg {
+    padding-bottom: 1rem;
+  }
+
+  .btn--tool {
+    background-color: #c1c1c1;
+    width: 100%;
+    height: 100%;
+    padding: 0.25em 0.3em;
+  }
+  
+  .tool-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.25rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .btn--color {
+    -webkit-appearance: none;
+    border: none;
+    width: 100%;
+    height: 28px;
+    padding: 0;
+    cursor: pointer;
+  }
+  .btn--active {
+    background-color: hsl(310, 100%, 70%);
+  }
+  
+  
+  
+  .btn--eraser-active {
+    background-color: hsl(310, 100%, 70%);
+  }
+  
+  .btn--width-active {
+    background-color: hsl(310, 100%, 70%);
+  }
+  
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border: none;
+  }
+  
+
+.blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid currentColor;
+    border-radius: 30px;
+  }
+  .blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+  }
+  .blob-btn:hover .blob-text {
+    color: #ffffff;
+    border-radius: 30px;
+  }
+  .blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+  }
+  .blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+  }
+  .blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url("#goo");
+  }
+  
+  .blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: currentColor;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.4s ease;
+  }
