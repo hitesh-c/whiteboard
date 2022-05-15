@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1aaae6e5.chunk.css",
-    "main.js": "/static/js/main.797298bd.chunk.js",
-    "main.js.map": "/static/js/main.797298bd.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.51c02bd6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.51c02bd6.js.map",
-    "static/js/2.67f53a33.chunk.js": "/static/js/2.67f53a33.chunk.js",
-    "static/js/2.67f53a33.chunk.js.map": "/static/js/2.67f53a33.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.1aaae6e5.chunk.css.map": "/static/css/main.1aaae6e5.chunk.css.map",
-    "static/js/2.67f53a33.chunk.js.LICENSE.txt": "/static/js/2.67f53a33.chunk.js.LICENSE.txt"
+    "main.css": "/paint-app/static/css/main.1aaae6e5.chunk.css",
+    "main.js": "/paint-app/static/js/main.797298bd.chunk.js",
+    "main.js.map": "/paint-app/static/js/main.797298bd.chunk.js.map",
+    "runtime-main.js": "/paint-app/static/js/runtime-main.a9d013ae.js",
+    "runtime-main.js.map": "/paint-app/static/js/runtime-main.a9d013ae.js.map",
+    "static/js/2.67f53a33.chunk.js": "/paint-app/static/js/2.67f53a33.chunk.js",
+    "static/js/2.67f53a33.chunk.js.map": "/paint-app/static/js/2.67f53a33.chunk.js.map",
+    "index.html": "/paint-app/index.html",
+    "static/css/main.1aaae6e5.chunk.css.map": "/paint-app/static/css/main.1aaae6e5.chunk.css.map",
+    "static/js/2.67f53a33.chunk.js.LICENSE.txt": "/paint-app/static/js/2.67f53a33.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.51c02bd6.js",
+    "static/js/runtime-main.a9d013ae.js",
     "static/js/2.67f53a33.chunk.js",
     "static/css/main.1aaae6e5.chunk.css",
     "static/js/main.797298bd.chunk.js"
