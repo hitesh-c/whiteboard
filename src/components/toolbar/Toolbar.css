@@ -1,5 +1,20 @@
-  
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 196px;
+    padding: 1.2rem ;
+    margin-top: 4rem;
+    background-color: #f1f1f1;
+ 
+}  
 
+.tool-container {
+  padding-top: 2rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
 
 .tool-section {
     padding-bottom: 0.5rem;
@@ -9,6 +24,35 @@
     padding-bottom: 1rem;
   }
 
+  btn--block {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  .btn {
+    display: inline-flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 0.5em;
+    color: var(--color-text);
+    background-color: #bbb;
+    height: 45px;
+  }
+  
+  .btn--main {
+    background-color:   #5b519175;
+    margin-bottom: 0.75rem;
+  }
+  
   .btn--tool {
     background-color: #c1c1c1;
     width: 100%;
@@ -33,18 +77,16 @@
     cursor: pointer;
   }
   .btn--active {
-    background-color: hsl(310, 100%, 70%);
+    background-color: #5b519180;
   }
   
   
   
   .btn--eraser-active {
-    background-color: hsl(310, 100%, 70%);
+    background-color: #5b519180;
   }
   
-  .btn--width-active {
-    background-color: hsl(310, 100%, 70%);
-  }
+
   
   input[type="color"]::-webkit-color-swatch-wrapper {
     padding: 0;

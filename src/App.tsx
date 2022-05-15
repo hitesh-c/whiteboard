@@ -1,19 +1,24 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { Canvas } from "./components/canvas/Canvas";
+import Navbar from './components/navbar/Navbar';
 import { Toolbar } from "./components/toolbar/Toolbar";
 import { useDraw } from "./hooks/usePainter";
 
+
+
 const App = () => {
-  const [dateUrl, setDataUrl] = useState("#");
+  const dataUrl = useRef('#'); 
   const [{ canvas, isReady, ...state }, { init, ...api }] = useDraw();
 
   const handleDownload = useCallback(() => {
+    console.log('download called', dataUrl.current);
     if (!canvas || !canvas.current) return;
-
-    setDataUrl(canvas.current.toDataURL("image/png"));
+    dataUrl.current=canvas.current.toDataURL("image/png");
+    console.log('download called', dataUrl.current);
   }, [canvas]);
 
-  const toolbarProps = { ...state, ...api, dateUrl, handleDownload };
+  const toolbarProps = { ...state, ...api, dataUrl, handleDownload };
+  const navbarProps = { ...state, init,...api, dataUrl, handleDownload };
 
   //initialising 
   useEffect(()=>{
@@ -21,9 +26,11 @@ const App = () => {
   },[])
 
   return (
-    <>
+    < >
+      <Navbar {...navbarProps} />
       <Toolbar {...toolbarProps} />
       <Canvas width={state.currentWidth} canvasRef={canvas} />
+      
     </>
   );
 };
