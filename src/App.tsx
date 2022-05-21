@@ -1,8 +1,8 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { Canvas } from "./components/canvas/Canvas";
 import Navbar from './components/navbar/Navbar';
 import { Toolbar } from "./components/toolbar/Toolbar";
-import { useDraw } from "./hooks/usePainter";
+import { useDraw } from "./hooks/useDraw";
 
 
 
@@ -16,6 +16,7 @@ const App = () => {
     dataUrl.current=canvas.current.toDataURL("image/png");
     console.log('download called', dataUrl.current);
   }, [canvas]);
+  console.log('rerender');
 
   const toolbarProps = { ...state, ...api, dataUrl, handleDownload };
   const navbarProps = { ...state, init,...api, dataUrl, handleDownload };

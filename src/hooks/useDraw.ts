@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useRef, useState } from 'react';
 
 export const useDraw = () => {
   const canvas = useRef<HTMLCanvasElement>() as any;
@@ -28,6 +28,7 @@ export const useDraw = () => {
 
   const ctx: any = useRef(canvas?.current?.getContext("2d"));
   const ctxOverlay: any = useRef();
+  console.log('custom hook called');
 
   const drawOnCanvas = (nativeEvent: any) => {
     if (!isDrawing) {
@@ -40,7 +41,7 @@ export const useDraw = () => {
     }
 
     if(isRegularMode.current){
-      console.log("Regular mode")
+      console.log("Drawing");
       ctx.current.beginPath();
       ctx.current.moveTo(lastX.current, lastY.current);
       ctx.current.lineTo(offsetX, offsetY);
@@ -61,8 +62,8 @@ export const useDraw = () => {
        ctx.current.strokeRect(offsetX, offsetY, width, height);
       console.log('stroking rect');
        [lastX.current, lastY.current] = [offsetX, offsetY];
-       let lastWidth= width;
-       let lastHeight= height;
+      //  let lastWidth= width;
+      //  let lastHeight= height;
       //  ctx.current.clearRect(offsetX,offsetY, lastWidth+10, lastHeight+10);
       //todo
       // ctx.current.stroke();
@@ -107,8 +108,8 @@ export const useDraw = () => {
     // console.log('undo called', undoSteps.current)
     if (undo.current > 0) {
       const data = undoSteps.current[undo.current];
-      if (data && data.length == 0) {
-        console.log(data);
+      if (data && data.length === 0) {
+        // console.log(data);
         undo.current = undo.current + 1;
         redo.current = redo.current - 1;
         return;
@@ -144,13 +145,13 @@ export const useDraw = () => {
   const handleRedo = () => {
     if (redo.current > 0) {
       const data = redoStep.current[redo.current];
-      if (data && data.length == 0) {
-        console.log(data);
+      if (data && data.length === 0) {
+        // console.log(data);
         undo.current = undo.current + 1;
         redo.current = redo.current - 1;
         return;
       }
-      console.log("redo called", data);
+      // console.log("redo called", data);
 
       ctx.current.strokeStyle = "black";
       ctx.current.beginPath();
@@ -188,7 +189,7 @@ export const useDraw = () => {
 
       setCurrentColor(selectedColor.current);
       ctx.current.lineWidth = selectedLineWidth.current;
-      console.log(isEraserMode.current)
+      // console.log(isEraserMode.current)
       isEraserMode.current
         ? (ctx.current.globalCompositeOperation = "destination-out")
         : (ctx.current.globalCompositeOperation = "source-over");
@@ -230,7 +231,7 @@ export const useDraw = () => {
       ctx.current.lineWidth = 10;
       setIsReady(true);
       setCurrentWidth(15);
-      console.log("init called");
+      // console.log("init called");
     }
   };
 
@@ -288,8 +289,8 @@ export const useDraw = () => {
     isLineMode.current = false;
     isRegularPaintMode.current = true;
     isEraserMode.current = false;
-    console.log('rect called', isLineMode.current,
-    isEraserMode.current)
+    // console.log('rect called', isLineMode.current,
+    // isEraserMode.current)
   };
 
   const handleLineMode = () => {

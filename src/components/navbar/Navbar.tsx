@@ -10,12 +10,12 @@ const Navbar: React.FC<any> = ({
 
     const download=()=>{
       console.log('downloading', dataUrl.current);
-        const a = document.createElement('a')
-        a.href = dataUrl.current
-        a.download = "image.png"
-        document.body.appendChild(a)
-        a.click()
-        document.body.removeChild(a)
+        const a = document.createElement('a');
+        a.href = dataUrl.current;
+        a.download = "image.png";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     }
 
     const handleNew = () =>{
@@ -51,7 +51,7 @@ const Navbar: React.FC<any> = ({
         >
           Save
         </a>
-        <a href="#about">Info</a>
+        <a href="https://github.com/hitesh-c/paint-app">Info</a>
       </div>
       </>
   );
