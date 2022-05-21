@@ -42,6 +42,6 @@ after undo, we push in { redoSteps } and increment in { redo }
 For redo functionality, same happens in redoSteps[redo]
 
 ## Problem faced :
-many :-( , but resolved by debugging
+many :-( , but resolved 
 
 
