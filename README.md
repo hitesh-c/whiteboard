@@ -1,6 +1,6 @@
-# Paint APP
+#Whiteboard 
 
-Simple paint app made with React, custom hooks, Canvas API
+Simple Whiteboard app made with React, custom hooks, Canvas API
 
 ## Demo
 
