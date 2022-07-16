@@ -30,7 +30,7 @@ const Navbar: React.FC<any> = ({
     <>
       <div className="topnav" style = {{ width : window.innerWidth }}>
         <a className="active" >
-         PAINT 
+         WHITEBOARD
         </a>
         <a 
           onClick={ ()=>{
