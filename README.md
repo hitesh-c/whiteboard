@@ -4,7 +4,7 @@ Simple Whiteboard app made with React, custom hooks, Canvas API
 
 ## Demo
 
-https://hitesh-c.github.io/paint-app/
+https://hitesh-c.github.io/whiteboard
 
 ## How to start:
 
@@ -40,8 +40,4 @@ we only need to retrace on data.
 after undo, we push in { redoSteps } and increment in { redo } 
 
 For redo functionality, same happens in redoSteps[redo]
-
-## Problem faced :
-many :-( , but resolved 
-
 
