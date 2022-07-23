@@ -1,6 +1,6 @@
 {
-  "short_name": "Paint app",
-  "name": "Paint app by Hitesh",
+  "short_name": "whiteboard",
+  "name": "compiler whiteboard",
   "icons": [
     {
       "src": "favicon.ico",

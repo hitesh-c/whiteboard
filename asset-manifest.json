@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/paint-app/static/css/main.1aaae6e5.chunk.css",
-    "main.js": "/paint-app/static/js/main.be956948.chunk.js",
-    "main.js.map": "/paint-app/static/js/main.be956948.chunk.js.map",
-    "runtime-main.js": "/paint-app/static/js/runtime-main.9333c1a8.js",
-    "runtime-main.js.map": "/paint-app/static/js/runtime-main.9333c1a8.js.map",
-    "static/js/2.d017a11c.chunk.js": "/paint-app/static/js/2.d017a11c.chunk.js",
-    "static/js/2.d017a11c.chunk.js.map": "/paint-app/static/js/2.d017a11c.chunk.js.map",
-    "index.html": "/paint-app/index.html",
-    "static/css/main.1aaae6e5.chunk.css.map": "/paint-app/static/css/main.1aaae6e5.chunk.css.map",
-    "static/js/2.d017a11c.chunk.js.LICENSE.txt": "/paint-app/static/js/2.d017a11c.chunk.js.LICENSE.txt"
+    "main.css": "/whiteboard/static/css/main.28d19db5.chunk.css",
+    "main.js": "/whiteboard/static/js/main.0c6260d1.chunk.js",
+    "main.js.map": "/whiteboard/static/js/main.0c6260d1.chunk.js.map",
+    "runtime-main.js": "/whiteboard/static/js/runtime-main.45056c32.js",
+    "runtime-main.js.map": "/whiteboard/static/js/runtime-main.45056c32.js.map",
+    "static/js/2.791dd88a.chunk.js": "/whiteboard/static/js/2.791dd88a.chunk.js",
+    "static/js/2.791dd88a.chunk.js.map": "/whiteboard/static/js/2.791dd88a.chunk.js.map",
+    "index.html": "/whiteboard/index.html",
+    "static/css/main.28d19db5.chunk.css.map": "/whiteboard/static/css/main.28d19db5.chunk.css.map",
+    "static/js/2.791dd88a.chunk.js.LICENSE.txt": "/whiteboard/static/js/2.791dd88a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9333c1a8.js",
-    "static/js/2.d017a11c.chunk.js",
-    "static/css/main.1aaae6e5.chunk.css",
-    "static/js/main.be956948.chunk.js"
+    "static/js/runtime-main.45056c32.js",
+    "static/js/2.791dd88a.chunk.js",
+    "static/css/main.28d19db5.chunk.css",
+    "static/js/main.0c6260d1.chunk.js"
   ]
 }
